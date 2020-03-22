@@ -1,9 +1,7 @@
-<html>
-<head><title></title></head>
+{% extends 'Cylus/MainLayout.html'%}
+{% block content %}
 
-<body>
+<span class="message"> {{message}}</span> 
+    {{ content }}
 
-{{ content }}
-
-</body>
-</html>
+{%endblock%}

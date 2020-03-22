@@ -26,7 +26,7 @@ from Cylus import views
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
-    url(r'^$',views.index ,name='index')
+    url(r'^$',views.index ,name='index'),
+    url(r'^about$',views.about, name="about")
     #url(r'^contact$',Cylus.views.contact, name="contact"),
-    #url(r'^about$',Cylus.views.about, name="about")
 ]

@@ -9,8 +9,16 @@ def index(request):
     return render(request,
                   'Cylus/index.html',
                   {
-                    'tilte':'Home',
+                    'title':'Home',
                     'year': datetime.now().year,
-                    'content':"Here us some content"
+                    'content':"Here us some content",
+                    'message':"Here is my mf message"
 
                   })
+def about(request):
+    return render(request,'Cylus/about.html',
+                  {
+                      'title':'About',
+                      'content': 'here is the about contact page',
+                      'message':'here is a useless message'
+                      })
