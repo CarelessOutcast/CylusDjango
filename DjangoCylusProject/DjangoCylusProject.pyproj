@@ -3,6 +3,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>DjangoCylusProject</Name>
     <RootNamespace>DjangoCylusProject</RootNamespace>
+    <InterpreterId>MSBuild|DjangoCylusEnv|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -29,6 +30,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Cylus\admin.py" />
+    <Compile Include="Cylus\apps.py" />
+    <Compile Include="Cylus\migrations\__init__.py" />
+    <Compile Include="Cylus\models.py" />
+    <Compile Include="Cylus\tests.py" />
+    <Compile Include="Cylus\views.py" />
+    <Compile Include="Cylus\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="DjangoCylusProject\__init__.py" />
     <Compile Include="DjangoCylusProject\settings.py" />
@@ -36,10 +44,28 @@
     <Compile Include="DjangoCylusProject\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cylus\templates\Cylus\about.html" />
+    <Content Include="Cylus\templates\Cylus\contact.html" />
+    <Content Include="Cylus\templates\Cylus\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Cylus\" />
+    <Folder Include="Cylus\migrations\" />
+    <Folder Include="Cylus\templates\" />
+    <Folder Include="Cylus\templates\Cylus\" />
     <Folder Include="DjangoCylusProject\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="DjangoCylusEnv\">
+      <Id>DjangoCylusEnv</Id>
+      <Version>3.7</Version>
+      <Description>DjangoCylusEnv (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
