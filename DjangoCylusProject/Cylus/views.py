@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
-
+from django.views import View
 # Create your views here.
 
 def index(request):
@@ -22,3 +22,6 @@ def about(request):
                       'content': 'here is the about contact page',
                       'message':'here is a useless message'
                       })
+class ContactView(View):
+    def get(self,request):
+        return render(request,'Cylus.contact.html',{})

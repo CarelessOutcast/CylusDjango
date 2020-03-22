@@ -4,6 +4,7 @@
     <Name>DjangoCylusProject</Name>
     <RootNamespace>DjangoCylusProject</RootNamespace>
     <InterpreterId>MSBuild|DjangoCylusEnv|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,8 +45,29 @@
     <Compile Include="DjangoCylusProject\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cylus\static\css\Bootstrap.css" />
-    <Content Include="Cylus\static\css\site.css" />
+    <Content Include="Cylus\Static\css\bootstrap-grid.css" />
+    <Content Include="Cylus\Static\css\bootstrap-grid.css.map" />
+    <Content Include="Cylus\Static\css\bootstrap-grid.min.css" />
+    <Content Include="Cylus\Static\css\bootstrap-grid.min.css.map" />
+    <Content Include="Cylus\Static\css\bootstrap-reboot.css" />
+    <Content Include="Cylus\Static\css\bootstrap-reboot.css.map" />
+    <Content Include="Cylus\Static\css\bootstrap-reboot.min.css" />
+    <Content Include="Cylus\Static\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Cylus\Static\css\bootstrap.css" />
+    <Content Include="Cylus\Static\css\bootstrap.css.map" />
+    <Content Include="Cylus\Static\css\bootstrap.min.css" />
+    <Content Include="Cylus\Static\css\bootstrap.min.css.map" />
+    <Content Include="Cylus\static\Jquery\jquery-3.4.1.min.map" />
+    <Content Include="Cylus\static\Jquery\jquery.min.js" />
+    <Content Include="Cylus\static\Jquery\jquery.js" />
+    <Content Include="Cylus\static\js\bootstrap.bundle.js" />
+    <Content Include="Cylus\static\js\bootstrap.bundle.js.map" />
+    <Content Include="Cylus\static\js\bootstrap.bundle.min.js" />
+    <Content Include="Cylus\static\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Cylus\static\js\bootstrap.js" />
+    <Content Include="Cylus\static\js\bootstrap.js.map" />
+    <Content Include="Cylus\static\js\bootstrap.min.js" />
+    <Content Include="Cylus\static\js\bootstrap.min.js.map" />
     <Content Include="Cylus\templates\Cylus\about.html" />
     <Content Include="Cylus\templates\Cylus\contact.html" />
     <Content Include="Cylus\templates\Cylus\index.html" />
@@ -58,6 +80,7 @@
     <Folder Include="Cylus\static\" />
     <Folder Include="Cylus\static\css\" />
     <Folder Include="Cylus\static\js\" />
+    <Folder Include="Cylus\static\Jquery\" />
     <Folder Include="Cylus\templates\" />
     <Folder Include="Cylus\templates\Cylus\" />
     <Folder Include="DjangoCylusProject\" />
