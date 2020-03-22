@@ -21,13 +21,12 @@ Including another URLconf
 #from django.urls import path
 
 from django.conf.urls import url,include
-import Cylus.views
+from Cylus import views
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
-    url(r'^$',Cylus.views.index,name='index'),
-    url(r'^home$',Cylus.views.index,name="home"),
+    url(r'^$',views.index ,name='index')
     #url(r'^contact$',Cylus.views.contact, name="contact"),
     #url(r'^about$',Cylus.views.about, name="about")
 ]
