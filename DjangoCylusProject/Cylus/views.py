@@ -5,16 +5,8 @@ from django.views import View
 # Create your views here.
 
 def home(request):
-    #assert isinstance(request, HttpResponse)
-    return render(request,
-                  'Cylus/index.html',
-                  {
-                    'title':'Home',
-                    'year': datetime.now().year,
-                    'content':"Here us some content",
-                    'message':"Here is my mf message"
+    return render(request,'Cylus/home.html',{})
 
-                  })
 class ContactView(View):
     def get(self,request):
         return render(request,'Cylus/contact.html',{})
