@@ -4,7 +4,7 @@ from datetime import datetime
 from django.views import View
 # Create your views here.
 
-def index(request):
+def home(request):
     #assert isinstance(request, HttpResponse)
     return render(request,
                   'Cylus/index.html',
@@ -15,13 +15,10 @@ def index(request):
                     'message':"Here is my mf message"
 
                   })
-def about(request):
-    return render(request,'Cylus/about.html',
-                  {
-                      'title':'About',
-                      'content': 'here is the about contact page',
-                      'message':'here is a useless message'
-                      })
 class ContactView(View):
     def get(self,request):
-        return render(request,'Cylus.contact.html',{})
+        return render(request,'Cylus/contact.html',{})
+
+class AboutView(View):
+    def get(self,request,*args,**kwargs):
+        return render(request,'Cylus/about.html',{})
