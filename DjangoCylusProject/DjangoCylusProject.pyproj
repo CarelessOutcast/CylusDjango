@@ -45,10 +45,12 @@
     <Compile Include="DjangoCylusProject\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cylus\static\css\main.css" />
     <Content Include="Cylus\templates\Cylus\about.html" />
     <Content Include="Cylus\templates\Cylus\contact.html" />
     <Content Include="Cylus\templates\Cylus\layout.html" />
     <Content Include="Cylus\templates\Cylus\home.html" />
+    <Content Include="Cylus\templates\Cylus\profile.html" />
     <Content Include="Cylus\templates\Cylus\snippets\navbar.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
@@ -56,6 +58,9 @@
     <Folder Include="Cylus\" />
     <Folder Include="Cylus\migrations\" />
     <Folder Include="Cylus\static\" />
+    <Folder Include="Cylus\static\css\" />
+    <Folder Include="Cylus\static\js\" />
+    <Folder Include="Cylus\static\misc\" />
     <Folder Include="Cylus\templates\" />
     <Folder Include="Cylus\templates\Cylus\" />
     <Folder Include="Cylus\templates\Cylus\snippets\" />
